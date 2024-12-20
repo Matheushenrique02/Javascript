@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:400px;
+            margin:auto;
+            background-color: gray;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+        h1{
+            background-color: rebeccapurple;
+            padding: 20px;
+        }
+        p{
+            
+        }
+
+         a{
+            color: black;
+        }
+
+        div{
+            width: 100px;
+            margin: auto;
+            margin-top: 20px;
+            background-color: purple;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id minima tempora quos ipsam distinctio iste commodi cupiditate praesentium dolores quas aperiam perferendis, incidunt totam tempore. Natus culpa consequuntur beatae perferendis?</p>
+    <a href="#">
+        <div id="msg">clique em mim</div>
+    </a>
+
+
+
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        p1.style.color ='green'
+        corpo.style.backgroundColor ='white'
+        var f = document.querySelector('div#msg')
+        f.innerText ='modificando...'
+        f.style.color = 'white'
+        
+    </script>
+    
+</body>
+</html>

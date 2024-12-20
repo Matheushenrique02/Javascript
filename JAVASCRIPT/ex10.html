@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC</title>
+    <style>
+        body{
+            width: 400px;
+            margin: auto;
+            margin-top: 200px;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>PESAGEM</h1>
+    Seu Peso:<input type="number" name="peso" id="peso">KG
+    <input type="button" value="verificar" onclick="calc()">
+    <div id="res">
+
+    </div>
+
+
+
+
+    <script>
+        
+
+        function calc(){
+            var p = document.getElementById('peso')
+            res = document.getElementById('res')
+            var pes = Number(peso.value)
+            res.innerHTML =  `<p>Seu peso atual é ${pes} Kg </p>`
+            res.innerHTML += `<p>(UFC)calculando sua categoria...</p>`
+            if(pes > 70){
+                res.innerHTML+= `<p> Sua categoria é peso pesado </p>`
+            }
+            else{
+                res.innerHTML+= `<p> Sua categoria é peso leve </p>`
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

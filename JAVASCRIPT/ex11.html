@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Você é de onde...</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="revelar"  onclick="calc()">
+    <div id="res">
+
+    </div>
+    
+
+
+    <script>
+        function calc(){
+            var a = document.getElementById('pais').value.toLowerCase()
+            res = document.getElementById('res')
+
+            res.innerHTML += `<p> Verificando.... </p>`
+
+            if(a == 'brasil'){
+                res.innerHTML += `<p> Você mora em ${a} logo você é brasileiro </p>`
+            }
+            else {
+                res.innerHTML += `<p> Você mora em ${a} logo você é estrangeiro</p>`
+            }
+            
+        }
+    </script>
+</body>
+</html>
