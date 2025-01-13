@@ -1,0 +1,12 @@
+@media screen and (max-width:768px){
+
+    section{
+        margin: auto;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

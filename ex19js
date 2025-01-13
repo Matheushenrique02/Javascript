@@ -1,0 +1,15 @@
+/*var num = [5,8,9,2,3]
+console.log(`a var contem ${num.length} valores`)
+pos = 0
+
+while(pos < num.length){
+    console.log(`A posição ${[pos]} tem o valor ${num[pos]}`)
+    pos++
+}
+*/
+var num = [5,6,10,87,24]
+for (var pos in num){
+    console.log(num[pos])
+}
+
+console.log(num.indexOf(25))
